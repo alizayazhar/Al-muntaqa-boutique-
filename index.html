@@ -1,41 +1,55 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Alizay Boutique</title>
+  <title>Al Muntaqa | The Golden Selection</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Alizay Boutique</h1>
-  <p>Elegant Clothes & Handmade Bags</p>
+  <h1>Al Muntaqa</h1>
+  <p class="tagline">The Golden Selection</p>
+  <div class="cart">🛒 <span id="cartCount">0</span></div>
 </header>
 
 <section class="products">
-  <h2>Our Collection</h2>
 
   <div class="product">
-    <img src="cloth1.jpg" alt="Dress">
-    <h3>Royal Green Dress</h3>
-    <button onclick="addToCart()">Add to Cart</button>
+    <img src="cloth1.jpg">
+    <h3>Luxury Embroidered Dress</h3>
+    <p class="price">PKR 6,500</p>
+    <button onclick="addToCart('Luxury Embroidered Dress')">Add to Cart</button>
   </div>
 
   <div class="product">
-    <img src="bag1.jpg" alt="Bag">
-    <h3>Handmade Bag</h3>
-    <button onclick="addToCart()">Add to Cart</button>
+    <img src="cloth2.jpg">
+    <h3>Royal Formal Suit</h3>
+    <p class="price">PKR 8,200</p>
+    <button onclick="addToCart('Royal Formal Suit')">Add to Cart</button>
   </div>
+
+  <div class="product">
+    <img src="bag1.jpg">
+    <h3>Handmade Golden Bag</h3>
+    <p class="price">PKR 4,000</p>
+    <button onclick="addToCart('Handmade Golden Bag')">Add to Cart</button>
+  </div>
+
 </section>
 
 <section class="contact">
-  <h2>Contact Me</h2>
+  <h2>Order Now</h2>
   <p>📞 WhatsApp / Call: <strong>0370 9342592</strong></p>
-  <a href="https://wa.me/923709342592" class="contact-btn">Contact on WhatsApp</a>
+  <a id="orderLink" class="order-btn">Order on WhatsApp</a>
 </section>
 
 <footer>
-  <p>© 2026 Alizay Boutique</p>
+  © 2026 Al Muntaqa Boutique
 </footer>
 
 <script src="script.js"></script>
